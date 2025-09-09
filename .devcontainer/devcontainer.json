@@ -1,0 +1,47 @@
+{
+    "name": "chatbox",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "secrets": {
+        "GEMINI_API_KEY": {
+            "description": "Gemini API Key availed via Google AI for Developers program",
+            "documentationUrl": "https://ai.google.dev/gemini-api/docs/api-key"
+        },
+        "GOOGLE_API_KEY": {
+            "description": "Google Cloud Platform API Key for Vertex AI",
+            "documentationUrl": "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/authentication.md"
+        }
+    },
+    "portsAttributes": {
+        "8501": {
+            "label": "Streamlit App",
+            "onAutoForward": "openPreview"
+        },
+        "8000": {
+            "label": "FastAPI App",
+            "onAutoForward": "notify"
+        }
+
+    },
+    "forwardPorts": [
+        8501, 8000
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "github.copilot",
+                "github.copilot-chat",
+                "ms-vsliveshare.vsliveshare",
+                "oderwat.indent-rainbow",
+                "visualstudioexptteam.vscodeintellicode",
+                "redhat.vscode-yaml",
+                "google.gemini-cli-vscode-ide-companion",
+                "charliermarsh.ruff",
+                "ms-azuretools.vscode-containers"
+            ]
+        }
+    }
+}
