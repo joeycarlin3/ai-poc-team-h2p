@@ -4,6 +4,8 @@ Welcome to the sandbox repository for the "Technical Foundations of Generative A
 
 ## The "Why"
 
+It must clearly and concisely communicate the business purpose of your application. It should be written for a stakeholder who has five minutes to understand what you're doing and why it matters.
+
 **Mission Statement**: A single, compelling sentence that summarizes your project's purpose.
 **The Problem**: A clear description of the specific, high-value business problem or user pain point you are solving.
 **Our Solution**: A high-level overview of how your AI application will address this problem.
