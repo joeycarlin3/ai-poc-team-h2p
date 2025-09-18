@@ -1,6 +1,8 @@
 # Project Charter - The Business Case
 
-Welcome to the sandbox repository for the "Technical Foundations of Generative AI for Business" course. This repository provides a ready-to-use development environment in GitHub Codespaces, so you can start learning and experimenting with generative AI without worrying about local setup.
+The goal of this charter is to move beyond "vibe coding" and establish a professional foundation for your project. Before you write application code, your team must define your project as a system of activities. This involves creating a compelling business case, defining your product's features from a user's perspective, and establishing a governance framework for how your team will operate.
+
+This charter is the strategic blueprint for your proof-of-concept. A well-thought-out charter is the first and most critical step in convincing a funding committee that your team is worth investing in.
 
 ## The "Why"
 
