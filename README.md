@@ -2,7 +2,7 @@
 
 Welcome to the sandbox repository for the "Technical Foundations of Generative AI for Business" course. This repository provides a ready-to-use development environment in GitHub Codespaces, so you can start learning and experimenting with generative AI without worrying about local setup.
 
-## The Why
+## The "Why"
 
 **Mission Statement**: A single, compelling sentence that summarizes your project's purpose.
 **The Problem**: A clear description of the specific, high-value business problem or user pain point you are solving.
