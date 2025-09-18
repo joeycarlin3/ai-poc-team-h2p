@@ -5,6 +5,7 @@
 This is the most important document for defining your team's process. It demonstrates that you have thought carefully about how to manage your project and collaborate effectively. 
 
 It must include: 
+
  **Team Roles & Responsibilities**: Define the initial roles for your team members (e.g., Project Lead for this stage, Technical Lead, etc.). These roles can and should rotate in later stages. 
  
  **Collaboration Protocol**: Detail your team's specific rules for using GitHub. How will you use Issues, Projects, and Discussions? What is your meeting schedule? How will you ensure all work is visible? 
