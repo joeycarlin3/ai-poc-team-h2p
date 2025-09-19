@@ -1,21 +1,37 @@
-# Project Charter - The Business Case
+## 🧠 Project Charter – The Business Case
 
-The goal of this charter is to move beyond "vibe coding" and establish a professional foundation for your project. Before you write application code, your team must define your project as a system of activities. This involves creating a compelling business case, defining your product's features from a user's perspective, and establishing a governance framework for how your team will operate.
+### 🎯 Mission Statement  
+Empower job seekers to master interviews with confidence through personalized, AI-driven practice and feedback.
 
-This charter is the strategic blueprint for your proof-of-concept. A well-thought-out charter is the first and most critical step in convincing a funding committee that your team is worth investing in.
+---
 
-## The "Why"
+### 🔍 The Problem  
+Preparing for interviews is one of the most stressful and opaque parts of the job search. Candidates often struggle to:
 
-It must clearly and concisely communicate the business purpose of your application. It should be written for a stakeholder who has five minutes to understand what you're doing and why it matters.
+- Anticipate the types of questions they’ll be asked  
+- Deliver clear, structured, and compelling answers  
+- Receive meaningful feedback on their performance  
+- Track their progress and improve over time  
 
-**Mission Statement**: A single, compelling sentence that summarizes your project's purpose.
+This lack of preparation leads to missed opportunities, low confidence, and poor outcomes—especially for students and early-career professionals.
 
-**The Problem**: A clear description of the specific, high-value business problem or user pain point you are solving.
+---
 
-**Our Solution**: A high-level overview of how your AI application will address this problem.
+### 💡 Our Solution  
+Our application is an **AI-powered interview prep assistant** that simulates realistic interview scenarios and provides personalized feedback. Users upload their resume, specify career interests, and optionally share personality traits or goals. The app then:
 
-**Target User**: A brief description of the primary user you are building this for.
+- Generates tailored interview questions based on the user’s background and target roles  
+- Allows users to record or type their responses  
+- Uses AI to analyze answers for clarity, relevance, tone, and composure  
+- Offers actionable feedback and improvement tips  
+- Tracks user progress over time to highlight growth and readiness  
 
+This tool transforms interview prep from guesswork into a structured, supportive, and data-informed experience.
+
+---
+
+### 🎯 Target User  
+Our primary users are **college students, recent graduates, and early-career professionals** preparing for internships or full-time roles. Secondary users include **career services teams** and **bootcamp participants** seeking scalable, personalized coaching.
 
 
 
