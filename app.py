@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/16tLRbEHPhm4zmoHyKsuBDTVkv-9i-fWc
 """
 
-pip install streamlit google-generativeai streamlit-mic-recorder
-
 import streamlit as st
 import google.generativeai as genai
 from streamlit_mic_recorder import mic_recorder
