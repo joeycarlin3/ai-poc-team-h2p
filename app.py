@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-import google.generativeai as genai
+import google.genai as genai
 from streamlit_mic_recorder import mic_recorder
 
 # --- Configuration ---
