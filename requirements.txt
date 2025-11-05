@@ -1,4 +1,7 @@
 streamlit
-google-genai
 streamlit-mic-recorder
+google-generativeai
 python-dotenv
+openai-whisper
+torch
+
