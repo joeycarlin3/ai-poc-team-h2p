@@ -1,10 +1,12 @@
 import streamlit as st
-from streamlit_mic_recorder import mic_recorder
 import google.generativeai as genai
 from dotenv import load_dotenv
 import whisper
 import tempfile
 import os
+
+# Import the audio recorder component
+from st_audiorec import st_audiorec
 
 # Load environment variables
 load_dotenv()
@@ -30,12 +32,16 @@ st.subheader("Interview Question:")
 st.write(question)
 
 # Record audio
-audio = mic_recorder(start_prompt="🎙️ Start Recording", stop_prompt="⏹️ Stop", key="recorder")
+st.subheader("🎙️ Record your answer")
+wav_audio_data = st_audiorec()
 
 audio_file = None
-if audio and "audio" in audio:
-    st.audio(audio["audio"], format="audio/wav")
-    audio_file = audio["audio"]
+if wav_audio_data:
+    st.audio(wav_audio_data, format="audio/wav")
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp_file:
+        tmp_file.write(wav_audio_data)
+        tmp_path = tmp_file.name
+    audio_file = open(tmp_path, "rb").read()
 
 # Upload audio file
 uploaded_file = st.file_uploader("📁 Or upload a .wav file instead", type=["wav"])
