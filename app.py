@@ -5,9 +5,6 @@ import whisper
 import tempfile
 import os
 
-# Import the audio recorder component
-from st_audiorec import st_audiorec
-
 # Load environment variables
 load_dotenv()
 API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -18,7 +15,7 @@ else:
     genai.configure(api_key=API_KEY)
 
 st.title("🎤 AI Interview Practice Tool")
-st.write("Record your answer and get AI-powered feedback.")
+st.write("Upload your recorded answer as a .wav file and get AI-powered feedback.")
 
 # Dropdown for questions
 questions = [
@@ -31,20 +28,18 @@ question = st.selectbox("Choose an interview question:", questions)
 st.subheader("Interview Question:")
 st.write(question)
 
-# Record audio
-st.subheader("🎙️ Record your answer")
-wav_audio_data = st_audiorec()
+# Upload audio file
+st.subheader("📁 Upload your answer")
+st.markdown("""
+To use this tool:
+1. Record your answer using any voice recorder app on your phone or computer.
+2. Save the recording as a `.wav` file.
+3. Upload the file below to get transcription and feedback.
+""")
+
+uploaded_file = st.file_uploader("Upload a .wav file", type=["wav"])
 
 audio_file = None
-if wav_audio_data:
-    st.audio(wav_audio_data, format="audio/wav")
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp_file:
-        tmp_file.write(wav_audio_data)
-        tmp_path = tmp_file.name
-    audio_file = open(tmp_path, "rb").read()
-
-# Upload audio file
-uploaded_file = st.file_uploader("📁 Or upload a .wav file instead", type=["wav"])
 if uploaded_file:
     st.audio(uploaded_file, format="audio/wav")
     with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp_file:
@@ -93,4 +88,4 @@ if audio_file:
             except Exception as e:
                 st.error(f"Gemini error: {e}")
 else:
-    st.info("🎙️ Waiting for audio input or file upload...")
+    st.info("📂 Please upload a .wav file to continue.")
